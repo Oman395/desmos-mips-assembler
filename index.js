@@ -333,7 +333,7 @@ while (safety < 10000 && index >= 0) {
     case 6:
       // BLE
       console.log(
-        "WARNING: BGT USED. BGT IS NOT SUPPORTED BC I CBA IMPLEMENTING RN..."
+        "WARNING: BLE USED. BGT IS NOT SUPPORTED BC I CBA IMPLEMENTING RN..."
       );
       break;
   }

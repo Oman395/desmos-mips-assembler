@@ -1,6 +1,7 @@
 import fs from "fs";
 
-const FILE = "./test2.asm";
+const FILE = process.argv[2];
+console.log(`Assembling ${FILE}`)
 
 const INSTRUCTIONS = [
   "add",
@@ -159,9 +160,7 @@ if (dataSectionIndex !== textSectionIndex) {
       type = dataThing.args[0];
       dataThing.args = dataThing.args.slice(1, dataThing.args.length);
     }
-    console.log("???")
     let args = dataThing.args;
-    console.log(args);
     if (!args) throw new Error("Invalid data header on line " + i);
     let bitWidth; // "Unexpected lexical declaration in switch statement" nerd emoji
     let str;
